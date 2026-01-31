@@ -20,16 +20,19 @@ public class CustService {
         CustEntity entity=new CustEntity();
 
         entity.setEmail(request.getEmail());
+        entity.setAddress(request.getAddress());
         entity.setFirstName(request.getFirstName());
         entity.setLastName(request.getLastName());
         entity.setFeedBack(request.getFeedBack());
         entity.setPhoneNumber(request.getPhoneNumber());
+
         entity=repository.save(entity);
 
         CustResponse response=new CustResponse();
 
         if(null!=entity){
             response.setCustemail(entity.getEmail());
+            response.setCustaddress(entity.getAddress());
             response.setId(entity.getId());
             response.setFirstCustName(entity.getFirstName());
             response.setLastCustName(entity.getLastName());

@@ -21,6 +21,8 @@ public class CustEntity {
     private String phoneNumber;
     @Column(name = "email")
     private String email;
+    @Column(name = "address")
+    private String address;
 
     public Long getId() {
         return id;
@@ -44,6 +46,14 @@ public class CustEntity {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setId(Long id) {

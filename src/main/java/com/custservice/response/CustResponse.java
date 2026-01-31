@@ -18,6 +18,8 @@ public class CustResponse {
 
     private String CustphoneNumber;
 
+    private String Custaddress;
+
     public long getId() {
         return id;
     }
@@ -64,5 +66,13 @@ public class CustResponse {
 
     public void setCustphoneNumber(String custphoneNumber) {
         CustphoneNumber = custphoneNumber;
+    }
+
+    public String getCustaddress() {
+        return Custaddress;
+    }
+
+    public void setCustaddress(String custaddress) {
+        Custaddress = custaddress;
     }
 }

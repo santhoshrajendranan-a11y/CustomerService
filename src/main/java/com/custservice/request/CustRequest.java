@@ -14,6 +14,8 @@ public class CustRequest {
 
     private String phoneNumber;
 
+    private String address;
+
     public long getId() {
         return id;
     }
@@ -36,6 +38,14 @@ public class CustRequest {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public void setId(long id) {
