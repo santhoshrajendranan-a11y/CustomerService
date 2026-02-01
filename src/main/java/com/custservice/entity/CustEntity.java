@@ -27,6 +27,17 @@ public class CustEntity {
     @Column(name = "address2")
     private String address2;
 
+    @Column(name = "state")
+    private String state;
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
     public String getAddress2() {
         return address2;
     }
