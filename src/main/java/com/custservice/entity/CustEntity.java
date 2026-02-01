@@ -23,9 +23,19 @@ public class CustEntity {
     private String email;
     @Column(name = "address")
     private String address;
+    @Column(name = "country")
+    private String country;
 
     @Column(name = "address2")
     private String address2;
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
     public String getAddress2() {
         return address2;
