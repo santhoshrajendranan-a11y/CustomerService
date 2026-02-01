@@ -24,6 +24,17 @@ public class CustEntity {
     @Column(name = "address")
     private String address;
 
+    @Column(name = "address2")
+    private String address2;
+
+    public String getAddress2() {
+        return address2;
+    }
+
+    public void setAddress2(String address2) {
+        this.address2 = address2;
+    }
+
     public Long getId() {
         return id;
     }
